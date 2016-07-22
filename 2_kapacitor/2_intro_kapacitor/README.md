@@ -11,7 +11,7 @@
 
 ## Exercises
 
-# 1. Enable the TICKscripts PUT THE FOLDER HERE.
+# 1. Enable the TICKscripts in the `scripts` folder.
 
 ### 2A. Convert the following CQ into a Kapacitor batch task.
 
