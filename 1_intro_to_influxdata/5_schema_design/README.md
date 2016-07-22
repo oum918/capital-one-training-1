@@ -1,4 +1,4 @@
-# 5. Schema design (45-60 min) 2:00-3:00
+# 5. Schema design
 * A little bit deeper with the InfluxDB Data Model (RP's and Databases)
 * Continuous Queries and Retention policies
 * Schema Design (Project)
@@ -71,5 +71,5 @@ Note that the measurement name is `polutants`.
 
 ## 6C. Create a continuous query that moves data from the 24 hour rentention policy to the `"default"` retention policy.
 
-## 7. Create and `influx_stress` script that will generate load data for your system.
+## 7. Create an `influx_stress` script that will generate load data for your system.
 See the documentation on `influx_stress` for more information on how to generate load.

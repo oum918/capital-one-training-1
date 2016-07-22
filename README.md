@@ -54,11 +54,17 @@ Configuring UDFs with Kapacitor
 
 ### Lunch  (60 min) 12:00-1:00PM
 
-### 4. Kapacitor Review and Discussion (15-30 min) 1:00-1:30PM
+## 4. Kapacitor Workflows (30-60 minutes) 1:00-2:00PM
 
-### 5. The Dream (30 min) 1:30-2:00PM
+### Break (15 min) 2:00-2:15PM
 
-### 6. General Discussion over their own setup 3:00-End of Day
+### 5. Kapacitor Review and Discussion (15-30 min) 2:15-2:45PM
+
+### 6. The Dream (30 min) 2:45-3:15PM
+
+### 7. General Architecture and structure (15-30 min) 3:15-3:45PM
+
+### 6. Q&A 3:45-End of Day
 
 ## Day 3
 

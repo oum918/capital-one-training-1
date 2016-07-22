@@ -1,31 +1,39 @@
-### 4. Intro to Telegraf (15-30 min) 1:30-2:00
+# 4. Intro to Telegraf
 * Install Telegraf and get it talking to your InfluxDB instance
+* Install Grafana
+* Use Grafana to visualize data in the Database
+
+## By the end of this section students will be able to...
+* Explain what Telegraf is and when to use it
+* Install and Configure Telegraf
+* Create Dashboards using Telegraf and Grafana data
 
 
-## Installing Telegraf
+## Exercises
+### 1. Installing Telegraf
 
-### OSX
+#### OSX
 
 ```sh
 $ brew update
 $ brew install telegraf
 ```
 
-### Debian/Ubuntu
+#### Debian/Ubuntu
 
 ```sh
 wget http://get.influxdb.org/telegraf/telegraf_0.12.1-1_amd64.deb
 sudo dpkg -i telegraf_0.12.1-1_amd64.deb
 ```
 
-### RedHat/CentOS
+#### RedHat/CentOS
 
 ```sh
 wget http://get.influxdb.org/telegraf/telegraf-0.12.1-1.x86_64.rpm
 sudo yum localinstall telegraf-0.12.1-1.x86_64.rpm
 ```
 
-## How to Use Telegraf
+### How to Use Telegraf
 
 ```sh
 $ telegraf -help
@@ -49,24 +57,24 @@ The flags are:
   -version           print the version to stdout
 ```
 
-## Generate Config and Start Process
+### Generate Config and Start Process
 
-#### Generate a telegraf config file:
+##### Generate a telegraf config file:
 ```sh
 $ telegraf -sample-config > telegraf.conf
 ```
 
-#### Run a single telegraf collection, outputing metrics to stdout
+##### Run a single telegraf collection, outputing metrics to stdout
 ```sh
 $ telegraf -config telegraf.conf -test
 ```
 
-#### Run telegraf with all plugins defined in config file
+##### Run telegraf with all plugins defined in config file
 ```sh
 $ telegraf -config telegraf.conf
 ```
 
-## Check your InfluxDB Instance to be sure that it's writing out data
+### Check your InfluxDB Instance to be sure that it's writing out data
 
 ```sh
 $ influx
@@ -82,3 +90,5 @@ telegraf
 > SHOW SERIES
 ...
 ```
+
+### 2. Create a Dashboard with some Grafana Data

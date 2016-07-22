@@ -1,4 +1,4 @@
-# 3. Working with the CLI and Query Language (45-60 min) 11:00-12:00
+# 3. Working with the CLI and Query Language
 
 * Working with the InfluxDB CLI
 * The InfluxDB Query Language
@@ -15,8 +15,8 @@
 
 
 ## Write the data to your instance.
+Using the `stocks.txt` file in this directory run the following command:
 ```
-$ curl https://s3-us-west-2.amazonaws.com/influx-sample-data/stocks.txt > stocks.txt
 $ influx -import -path=stocks.txt -precision=s
 ```
 
