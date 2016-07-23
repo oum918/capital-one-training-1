@@ -14,10 +14,9 @@
 
 ## Exercises
 
-# 1. Enable the TICKscripts in the `scripts` folder.
+# 1. Create tasks for the TICKscripts in the `scripts` folder.
 
 ### 2A. Convert the following CQ into a Kapacitor batch task.
-
 ### 2B. Convert the following CQ into a Kapacitor stream task.
 
-### 2. Use Kapacitor to alert whenever something
+### 3. Use Kapacitor to alert whenever something

@@ -92,3 +92,13 @@ telegraf
 ```
 
 ### 2. Create a Dashboard with some Grafana Data
+#### Visualize the data in the `stocks` database.
+Pick a couple different `ticker` values create a dashboard for them
+
+**Hint**: You'll need to add a new data source for the `stocks` database.
+
+#### Visualize the data in the `telegraf` database.
+Create a dashboard with the free memory, disk used, and cpu user values in the `telegraf` database.
+
+#### Bonus: Visualize the data in the `_internal` database.
+Create a graph in Grafana that shows the current write throughput for you InfluxDB instance.
