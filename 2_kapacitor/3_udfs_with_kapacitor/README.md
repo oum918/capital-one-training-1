@@ -63,9 +63,3 @@ $ kapacitor enable cpu_avg
 
 
 #### 4. Create a Graph in Grafana for the measurement `cpu_avg` in the database `mydb`
-
-
-### Writing your own UDF
-
-TODO
-
