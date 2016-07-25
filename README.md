@@ -61,7 +61,7 @@ General Q&A 3:00-End of Day
 
 *Exercises* (30 min) 1:00-1:30PM
 
-## 4. Kapacitor Workflows (30-60 minutes) 1:30-2:00PM
+### 4. Kapacitor Workflows (30-60 minutes) 1:30-2:00PM
 
 ### Break (15 min) 2:00-2:15PM
 
