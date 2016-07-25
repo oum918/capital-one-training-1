@@ -32,49 +32,47 @@
 
 ### Break (10-15 min) 2:50-3:00PM
 
-### 6. Intro to Telegraf & Graphing (30-60 min) 3:00-3:50PM
-* Install Telegraf and get it talking to your InfluxDB instance
-* Install Grafana and Create a Dashboard
-
-*Exercises* (10 min) 3:50-4:00PM 
-
-General Q&A 4:00-End of Day
+General Q&A 3:00-End of Day
 
 ## Day 2
 
-### 1. Overview of Previous Day (30-45 min) 9:00-9:45AM 
-### 2. Intro to Kapacitor Part 1 (45-60 min) 9:45-10:30AM
+### 1. Overview of Previous Day (30-45 min) 9:00-9:30AM
+
+### 2. Intro to Telegraf & Graphing (30-60 min) 9:30-10:00PM
+* Install Telegraf and get it talking to your InfluxDB instance
+* Install Grafana and Create a Dashboard
+
+*Exercises* (10 min) 10:00-10:10PM
+
+### 2. Intro to Kapacitor Part 1 (45-60 min) 10:10-11:00AM
 * Install Kapacitor and get it talking to your InfluxDB instance
 * Using Kapacitor for data processing
 * Using Kapcitor for alerting
 
-*Exercises* (30 min) 10:30-11:00AM
+*Exercises* (20 min) 11:00-11:20AM
 
-### Break (15 min) 11:00-11:15AM
+### Break (10 min) 11:20-11:30AM
 
-### 3. Intro to Kapacitor Part 2 (30 min) 11:15-11:45AM
+### 3. Intro to Kapacitor Part 2 (30-45 min) 11:30-12:00AM
 * Writing a UDF with Kapacitor in Python
 * Configuring UDFs with Kapacitor
 
-*Exercises* (15 min) 11:45-12:00PM
-
 ### Lunch  (60 min) 12:00-1:00PM
 
-## 4. Kapacitor Workflows (30-60 minutes) 1:00-2:00PM
+*Exercises* (30 min) 1:00-1:30PM
+
+## 4. Kapacitor Workflows (30-60 minutes) 1:30-2:00PM
 
 ### Break (15 min) 2:00-2:15PM
 
 ### 5. Kapacitor Review and Discussion (15-30 min) 2:15-2:45PM
 
-### 6. The Dream (30 min) 2:45-3:15PM
-
-### 7. General Architecture and structure (15-30 min) 3:15-3:45PM
-
-### 6. Q&A 3:45-End of Day
+### 6. Q&A 2:45-End of Day
 
 ## Day 3
 
 ### 1. Review any material requested.
 ### 2. Overview of current architecture.
 ### 3. Discuss Specific InfluxDB/Kapacitor Goals.
+### 4. Mini Project
 ### 4. General Discussion and Consultation.
