@@ -14,7 +14,7 @@
 * Combine retention policies and continuous queries in novel ways to manage their data's lifecycle.
 * Use `influx_stress` to test generate load on your InfluxDB instance to generate load for your system.
 
-## Quiz (20 min) 3:00-3:20
+## Quiz (20 min)
 
 * Design a schema
 

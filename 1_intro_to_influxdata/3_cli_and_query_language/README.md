@@ -10,7 +10,7 @@
 * Articulate what InfluxQL can do.
 * Create novel queries of their own.
 
-## Quiz (20 min) 12:00-12:20
+## Quiz (20 min)
 * Querying Data (Project)
 
 
