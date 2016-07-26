@@ -38,6 +38,8 @@ General Q&A 3:00-End of Day
 
 ### 1. Overview of Previous Day (30-45 min) 9:00-9:30AM
 
+### 2. Enterprise Overview (30-45 min) 9:00-9:30AM
+
 ### 2. Intro to Telegraf & Graphing (30-60 min) 9:30-10:00PM
 * Install Telegraf and get it talking to your InfluxDB instance
 * Install Grafana and Create a Dashboard

@@ -72,8 +72,3 @@ SELECT min(so2_level) FROM polutants WHERE time > now() - 5m AND city='nyc' GROU
 Note that the measurement name is `polutants`.
 
 ## 18B. Create a 24 hour retention policy that is the `DEFAULT` retention policy for the database.
-
-## 18C. Create a continuous query that moves data from the 24 hour rentention policy to the `"default"` retention policy.
-
-## 18E. Create an `influx_stress` script that will generate load data for your system.
-See the documentation on `influx_stress` for more information on how to generate load.

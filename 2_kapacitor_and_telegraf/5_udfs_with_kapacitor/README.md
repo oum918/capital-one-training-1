@@ -11,55 +11,46 @@
 
 ### Using a UDF
 
-#### 1. Configure Kapacitor for the `moving_avg` UDF.
+#### 1. Configure Kapacitor for the `outliers` UDF.
 
 ```
 [udf]
 [udf.functions]
-    # Example python UDF.
-    # Use in TICKscript like:
-    #   stream.pyavg()
-    #           .field('value')
-    #           .size(10)
-    #           .as('m_average')
-    #
-    # uncomment to enable
-    [udf.functions.pyavg]
-        prog = "/usr/bin/python2" # Should be the path to the python2 on your machine
-        # Should be the path to https://github.com/influxdata/kapacitor/blob/master/udf/agent/examples/moving_avg/moving_avg.py locally on your computer
-        args = ["-u", "/etc/kapacitor/udf/agent/examples/moving_avg/moving_avg.py"]
+    [udf.functions.outliers]
+        # Should be the path to the outliers binary on your machine
+        prog = "/Users/michaeldesa/go/src/github.com/influxdata/capital-one-slides/2_kapacitor_and_telegraf/5_udfs_with_kapacitor/udfs/osx/outliers"
         timeout = "10s"
-       [udf.functions.pyavg.env]
-           # Should be path to https://github.com/influxdata/kapacitor/tree/master/udf/agent/py locally on your computer
-           PYTHONPATH = "/etc/kapacitor/udf/agent/py"
 ```
 
-#### 2. Start Kapacitor
-**Note:** Before starting it, if you don't have python protocol buffers installed please run `sudo pip install googleapis-common-protos`.
+#### 3. Read over the `python` implementation of the `outliers` UDF.
+
 
 #### 3. Create and enable a task in Kapacitor with the following TICKscript
 
-**cpu_avg.tick**
-```
-stream
-.from().measurement('cpu')
-.where(lambda: "cpu" == 'cpu-total')
-.pyavg()
-  .field('usage_idle')
-  .size(10)
-  .as('cpu_avg')
-.influxDBOut()
-  .database('mydb')
-  .retentionPolicy('default')
-  .measurement('cpu_avg')
-  .tag('kapacitor', 'true')
+**cpu_outliers.tick**
+```js
+batch
+    |query('''
+        SELECT * FROM "telegraf"."autogen"."cpu" WHERE cpu='cpu-total'
+    ''')
+    @outliers()
+      .field('user')
+    |influxDBOut()
+      .database('mydb')
+      .retentionPolicy('autogen')
+      .measurement('cpu_outliers')
 ```
 
 **Hint**
 ```sh
-$ kapacitor define -name cpu_avg -type stream -tick cpu_avg.tick -dbrp telegraf.default
-$ kapacitor enable cpu_avg
+$ kapacitor define -name cpu_outliers -type batch -tick cpu_outliers.tick -dbrp telegraf.default
+$ kapacitor enable cpu_outliers
 ```
 
 
-#### 4. Create a Graph in Grafana for the measurement `cpu_avg` in the database `mydb`
+#### 4. Create a Graph in Grafana for the measurement `cpu_outliers` in the database `mydb`
+
+#### 5. What types of UDFs would you like to see?
+
+#### 6. Bonus: For those with `python` or `go` experience, try creating your own basic UDF.
+
