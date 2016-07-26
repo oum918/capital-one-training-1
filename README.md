@@ -38,38 +38,36 @@ General Q&A 3:00-End of Day
 
 ### 1. Overview of Previous Day (30-45 min) 9:00-9:30AM
 
-### 2. Enterprise Overview (30-45 min) 9:00-9:30AM
+### 2. Enterprise Overview (30-45 min) 9:30-10:00AM
 
-### 2. Intro to Telegraf & Graphing (30-60 min) 9:30-10:00PM
+### 3. Intro to Telegraf & Graphing (30-60 min) 10:00-10:30PM
 * Install Telegraf and get it talking to your InfluxDB instance
 * Install Grafana and Create a Dashboard
 
-*Exercises* (10 min) 10:00-10:10PM
+*Exercises* (10 min) 10:30-10:40PM
 
-### 2. Intro to Kapacitor Part 1 (45-60 min) 10:10-11:00AM
+### Break (20 min) 10:40-11:00AM
+
+### 4. Intro to Kapacitor Part 1 (45-60 min) 11:00-12:00PM
 * Install Kapacitor and get it talking to your InfluxDB instance
 * Using Kapacitor for data processing
 * Using Kapcitor for alerting
 
-*Exercises* (20 min) 11:00-11:20AM
+### Lunch  (60 min) 12:00-1:00PM
 
-### Break (10 min) 11:20-11:30AM
+*Exercises* (20 min) 1:00-1:20AM
 
-### 3. Intro to Kapacitor Part 2 (30-45 min) 11:30-12:00AM
+### Break (10 min) 1:20-1:30AM
+
+### 5. Intro to Kapacitor Part 2 (30-45 min) 1:30-2:00AM
 * Writing a UDF with Kapacitor in Python
 * Configuring UDFs with Kapacitor
 
-### Lunch  (60 min) 12:00-1:00PM
+*Exercises* (10 min) 2:00-2:10PM
 
-*Exercises* (30 min) 1:00-1:30PM
+### 6. Kapacitor Workflows (30-60 minutes) 2:10-2:40PM
 
-### 4. Kapacitor Workflows (30-60 minutes) 1:30-2:00PM
-
-### Break (15 min) 2:00-2:15PM
-
-### 5. Kapacitor Review and Discussion (15-30 min) 2:15-2:45PM
-
-### 6. Q&A 2:45-End of Day
+### 6. Discussion about tomorrow 2:40-End of Day
 
 ## Day 3
 
