@@ -9,17 +9,20 @@ var polutants = stream
    .align()
 
 var smog = polutants
-            |mean('smog_level')
-              .as('smog_level')
+            |mean('smog')
+              .as('smog')
 
 var so2 = polutants
             |mean('so2_level')
               .as('so2_level')
 
+
 smog|
   join(so2)
     .as('smog', 'so2')
-  |eval(lambda: "smog.smog_level" / "so2.so2_level")
+    .fill(0.0)
+    .tolerance(1s)
+  |eval(lambda: "smog.smog" / "so2.so2_level")
     .as('ratio')
   |influxDBOut()
     .database('air_data')
