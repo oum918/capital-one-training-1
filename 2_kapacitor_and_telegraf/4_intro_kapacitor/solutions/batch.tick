@@ -1,0 +1,17 @@
+batch
+ |query('''
+  SELECT
+   median(lead) as lead,
+   mean(co2_ppm) as co2_ppm,
+   max(smog_level) as smog_level,
+   min(so2_level) as so2_level
+  FROM "air_data"."24_hour"."polutants"
+''')
+  .period(60m)
+  .every(60m)
+  .groupBy(*)
+ |influxDBOut()
+  .database('air_data')
+  .retentionPolicy('autogen')
+  .precision('s')
+

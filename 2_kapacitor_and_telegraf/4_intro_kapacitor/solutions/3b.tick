@@ -1,0 +1,27 @@
+var polutants = stream
+  |from()
+    .database('air_data')
+    .retentionPolicy('24_hour')
+    .measurement('polutants')
+  |window()
+   .period(2m)
+   .every(1m)
+   .align()
+
+var smog = polutants
+            |mean('smog_level')
+              .as('smog_level')
+
+var so2 = polutants
+            |mean('so2_level')
+              .as('so2_level')
+
+smog|
+  join(so2)
+    .as('smog', 'so2')
+  |eval(lambda: "smog.smog_level" / "so2.so2_level")
+    .as('ratio')
+  |influxDBOut()
+    .database('air_data')
+    .retentionPolicy('24_hour')
+    .measurement('so2_smog_ratio')
