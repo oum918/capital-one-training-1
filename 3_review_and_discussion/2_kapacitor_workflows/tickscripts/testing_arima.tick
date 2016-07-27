@@ -1,0 +1,23 @@
+var growth_interval = 1m
+var forecast_count = 7
+var history = 30d
+
+var threshold = 90.0
+
+var ar = batch
+    |query('''
+    SELECT max(used) as used_percent
+    FROM "telegraf"."autogen"."mem"
+''')
+        .period(30m)
+        .every(1m)
+        .align()
+        .groupBy(time(growth_interval), *)
+    @arima()
+        .field('used_percent')
+        .forecast(1)
+        .as('idk')
+    |influxDBOut()
+      .database('mydb')
+      .retentionPolicy('autogen')
+      .measurement('ari')

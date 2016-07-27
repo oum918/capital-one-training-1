@@ -13,7 +13,7 @@ polutants
     .as('lead')
   |influxDBOut()
     .database('air_data')
-    .retentionPolicy('autogen')
+    .retentionPolicy('default')
     .precision('s')
 
 polutants
@@ -21,5 +21,5 @@ polutants
     .as('co2_ppm')
   |influxDBOut()
     .database('air_data')
-    .retentionPolicy('autogen')
+    .retentionPolicy('default')
     .precision('s')

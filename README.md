@@ -65,14 +65,20 @@ General Q&A 3:00-End of Day
 
 *Exercises* (10 min) 2:00-2:10PM
 
-### 6. Kapacitor Workflows (30-60 minutes) 2:10-2:40PM
-
 ### 6. Discussion about tomorrow 2:40-End of Day
 
 ## Day 3
 
-### 1. Review any material requested.
-### 2. Overview of current architecture.
-### 3. Discuss Specific InfluxDB/Kapacitor Goals.
-### 4. Mini Project
-### 4. General Discussion and Consultation.
+### 1. Review of Day 2 material. (30-60 minutes) 9:00-10:00AM
+
+*Exercises from yesterday* (20 min) 10:00-10:20AM
+
+### 2. Kapacitor Workflows (30-60 minutes) 10:30-11:00PM
+
+### 3A. Overview of current architecture. 11:00-11:30
+
+### 3B. Discuss Specific InfluxDB/Kapacitor Goals. 11:30-12:00
+
+### Lunch  (60 min) 12:00-1:00PM
+
+### 4. General Discussion and Consultation. 1:00-End of day
